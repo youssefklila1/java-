@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.LoginController">
+   <children>
+      <VBox prefHeight="408.0" prefWidth="163.0" style="-fx-background-color: e6406d;" />
+      <HBox layoutX="72.0" layoutY="163.0" prefHeight="239.0" prefWidth="456.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="60.0">
+                     <children>
+                        <Label text="E-mail" textFill="WHITE" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Password" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0">
+                     <children>
+                        <TextField fx:id="txt_email" />
+                        <TextField fx:id="txt_pass" layoutX="10.0" layoutY="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../css/logo.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="65.0" layoutY="308.0" prefHeight="89.0" prefWidth="535.0" spacing="25.0">
+         <children>
+            <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#login" style="-fx-border-color: e4606d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="Login" />
+            <Button fx:id="btnforgotpass" mnemonicParsing="false" onAction="#forgotPass" style="-fx-border-color: e6406d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="Forgot Password ?" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

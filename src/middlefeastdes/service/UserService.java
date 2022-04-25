@@ -12,32 +12,68 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import middlefeastdes.entity.User;
 import middlefeastdes.service_interface.IService;
 import middlefeastdes.utils.Database;
+import middlefeastdes.utils.Mail;
 
+public class UserService implements IService<User> {
 
-public class UserService implements IService<User>{
-    
-     private Connection con;
+    private Connection con;
     private Statement ste;
+    int randomCode;
 
     public UserService() {
-            con = Database.getInstance().getConnection();
+        con = Database.getInstance().getConnection();
 
     }
-    
-    
+
+    public User login(String email, String password) throws SQLException {
+        String request = "SELECT * FROM user where email=? and password=?";
+        User user = null;
+        PreparedStatement pst = con.prepareStatement(request);
+        pst.setString(1, email);
+        pst.setString(2, password);
+        ResultSet rs = pst.executeQuery();
+         while (rs.next()) {
+                User e = new User();
+                e.setId(rs.getInt(1));
+                e.setEmail(rs.getString(2));
+                e.setPassword(rs.getString(4));
+                e.setLastname(rs.getString(6));
+                e.setFirstname(rs.getString(5));
+                e.setIsVerified(rs.getBoolean(7));
+                user = e;
+            }
+        
+        return user;
+    }
+
+    public int resetPassword(String email) {
+        Random rand = new Random();
+        randomCode = rand.nextInt(999999);
+        Mail mailer = new Mail();
+        mailer.sendResetEmail(email, "Use this Code to reset your Password : " + randomCode);
+        return randomCode;
+    }
+
+    public void updatePassword(String email, String password) throws SQLException {
+        PreparedStatement pre = con.prepareStatement("UPDATE `user` SET `password` = ? WHERE `email` = ?");
+        pre.setString(1, password);
+        pre.setString(2, email);
+        pre.executeUpdate();
+    }
 
     @Override
     public void add(User t) throws SQLException {
-        PreparedStatement pre =
-                con.prepareStatement(
-                        "INSERT INTO  `User` " +
-                                "(`email`, `password`,`roles`, `firstname`, `lastname`, `is_verified`) " +
-                                "VALUES ( ?, ?,'{}', ?, ?, ?)"
+        PreparedStatement pre
+                = con.prepareStatement(
+                        "INSERT INTO  `User` "
+                        + "(`email`, `password`,`roles`, `firstname`, `lastname`, `is_verified`) "
+                        + "VALUES ( ?, ?,'{}', ?, ?, ?)"
                 );
         pre.setString(1, t.getEmail());
         pre.setString(2, t.getPassword());
@@ -49,24 +85,24 @@ public class UserService implements IService<User>{
 
     @Override
     public void delete(int id) throws SQLException {
-        
-         String request = "DELETE FROM user where id=?";
+
+        String request = "DELETE FROM user where id=?";
         try {
             PreparedStatement pst = con.prepareStatement(request);
             pst.setInt(1, id);
             pst.executeUpdate();
-            
+
         } catch (SQLException ex) {
             Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
-            
+
         }
-        
+
     }
 
     @Override
     public void update(User t) throws SQLException {
         PreparedStatement pre = con.prepareStatement("UPDATE `user` SET `email` = ?, `password` = ?, `firstname` = ?, `lastname` = ? WHERE `id` = ?");
-         pre.setString(1, t.getEmail());
+        pre.setString(1, t.getEmail());
         pre.setString(2, t.getPassword());
         pre.setString(3, t.getFirstname());
         pre.setString(4, t.getLastname());
@@ -76,7 +112,7 @@ public class UserService implements IService<User>{
 
     @Override
     public List<User> findAll() throws SQLException {
-         List<User> myList = new ArrayList<>();
+        List<User> myList = new ArrayList<>();
         String req = "SELECT * FROM user";
         Statement st;
         try {
@@ -102,8 +138,8 @@ public class UserService implements IService<User>{
 
     @Override
     public User findById(int id) throws SQLException {
-          User user = new User();
-        String request = "SELECT * FROM user where id="+id;
+        User user = new User();
+        String request = "SELECT * FROM user where id=" + id;
         Statement st;
         try {
             st = con.createStatement();
@@ -116,7 +152,7 @@ public class UserService implements IService<User>{
                 e.setLastname(rs.getString(6));
                 e.setFirstname(rs.getString(5));
                 e.setIsVerified(rs.getBoolean(7));
-                user=e;
+                user = e;
             }
 
         } catch (SQLException ex) {
@@ -135,5 +171,5 @@ public class UserService implements IService<User>{
     public List<User> sortBy(String column, boolean descending) {
         return null;
     }
-    
+
 }

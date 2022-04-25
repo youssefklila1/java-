@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="middlefeastdes.gui.front.VerificationController">
+     <children>
+      <VBox prefHeight="408.0" prefWidth="163.0" style="-fx-background-color: e6406d;" />
+      <HBox layoutX="50.0" layoutY="163.0" prefHeight="239.0" prefWidth="478.0">
+         <children>
+            <VBox prefHeight="239.0" prefWidth="94.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="60.0">
+                     <children>
+                        <Label text="Verification Code" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0">
+                     <children>
+                        <TextField fx:id="txt_code" prefHeight="25.0" prefWidth="216.0">
+                           <VBox.margin>
+                              <Insets left="25.0" />
+                           </VBox.margin></TextField>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../css/logo.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="65.0" layoutY="308.0" prefHeight="89.0" prefWidth="535.0" spacing="25.0">
+         <children>
+            <Button fx:id="verifybtn" mnemonicParsing="false" onAction="#verify" style="-fx-border-color: e4606d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="Verify" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

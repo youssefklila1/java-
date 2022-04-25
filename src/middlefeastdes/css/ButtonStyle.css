@@ -6,8 +6,22 @@
     -fx-opacity: 0.6;
 }
 
+.buttonFrnt{
+    -fx-background-color: #e4606d;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-opacity: 1.0;
+}
+
+.buttonFrnt:hover{
+    -fx-background-color: #e4606d;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-opacity: 0.8;
+}
+
 #buttonAdd{
-        -fx-background-color: #2e8b57;
+    -fx-background-color: #2e8b57;
     -fx-border-color: transparent;
     -fx-font-family: Quicksand;
     -fx-background-radius: 0;
@@ -21,6 +35,7 @@
     -fx-border-color: transparent;
     -fx-font-family: Quicksand;
     -fx-background-radius: 0;
+    -fx-text-fill: white;
     -fx-border-radius: 0;
     -fx-pref-width: 100;
     -fx-pref-height: 40;
@@ -33,6 +48,7 @@
     -fx-font-family: Quicksand;
     -fx-background-radius: 0;
     -fx-border-radius: 0;
+    -fx-text-fill: white;
     -fx-pref-width: 100;
     -fx-pref-height: 40;
     -fx-opacity: 0.6;
