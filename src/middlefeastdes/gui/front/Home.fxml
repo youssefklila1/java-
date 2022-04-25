@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.HomeController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="280.0" style="-fx-background-color: e4606d;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnCourses" alignment="BASELINE_LEFT" graphicTextGap="25.0" mnemonicParsing="false" onAction="#loadCourses" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Courses" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../../css/e-learning_80px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnTutorials" alignment="BASELINE_LEFT" graphicTextGap="25.0" mnemonicParsing="false" onAction="#loadTutorials" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Tutorials" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../../css/tuition_80px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnArticles" alignment="BASELINE_LEFT" graphicTextGap="25.0" mnemonicParsing="false" onAction="#loadArticles" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Articles" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../../css/article_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnWishlist" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#wishlist" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Wishlist" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../css/wish_list_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfile" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="354.0" mnemonicParsing="false" onAction="#loadProfile" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Profile" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../css/male_user_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignin" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="414.0" mnemonicParsing="false" onAction="#Signin" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: e4606d;" stylesheets="@../../css/style.css" text="Sign In" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../css/enter_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="displyaArea" layoutX="280.0" layoutY="176.0" prefHeight="619.0" prefWidth="1000.0" style="-fx-background-color: ffffff;" />
+      <Label alignment="CENTER" layoutX="1231.0" layoutY="14.0" onMouseClicked="#close_app" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../css/Close_32px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="1186.0" layoutY="14.0" onMouseClicked="#minimize_app" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Demo/VelotnDash-master/src/com/velotn/images/minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="235.0" layoutX="291.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../css/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
