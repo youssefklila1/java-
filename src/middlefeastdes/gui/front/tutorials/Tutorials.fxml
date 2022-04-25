@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.tutorials.ShowAllTutorialsController">
+   <children>
+      <ScrollPane fx:id="scrollTable" layoutX="45.0" layoutY="46.0" maxHeight="486.0" maxWidth="950.0" minHeight="0.0" minWidth="0.0" style="-fx-background-color: #ffffff; -fx-background-insets: 0;" stylesheets="@../../../css/style.css" />
+   </children>
+</AnchorPane>
