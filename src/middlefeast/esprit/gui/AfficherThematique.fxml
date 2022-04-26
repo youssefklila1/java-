@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#btnSearchAction" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeast.esprit.gui.AfficherThematiqueController">
+   <children>
+      <AnchorPane id="txt_id" layoutX="-3.0" prefHeight="500.0" prefWidth="204.0" style="-fx-background-color: #247eea;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="696.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="22.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #51ab55;" text="Ajouter" textFill="WHITE" />
+            <Button layoutX="22.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnModifierAction" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: orange;" text="Modifier" textFill="WHITE" />
+            <Button layoutX="22.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnSupprimerAction" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #eb4845;" text="Supprimer" textFill="WHITE" />
+            <TextField id="txt" fx:id="txt_id" alignment="TOP_LEFT" editable="false" layoutX="12.0" layoutY="72.0" promptText="ID" />
+            <TextField id="txt_nom" fx:id="txt_nom" alignment="TOP_LEFT" layoutX="12.0" layoutY="116.0" promptText="Thematique" />
+            <Button alignment="TOP_CENTER" layoutX="12.0" layoutY="167.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="31.0" prefWidth="187.0" text="Choisir Image" />
+            <Label fx:id="lbl_image" alignment="CENTER" layoutX="16.0" layoutY="208.0" prefHeight="38.0" prefWidth="180.0" textAlignment="CENTER" />
+            <ImageView fx:id="image" fitHeight="175.0" fitWidth="170.0" layoutX="21.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_th" layoutX="231.0" layoutY="187.0" onMouseClicked="#getSelected" prefHeight="399.0" prefWidth="667.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="187.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="col_nom" prefWidth="311.0" text="Nom" />
+            <TableColumn fx:id="col_image" prefWidth="293.0" text="Image" />
+            <TableColumn fx:id="col_nom1" prefWidth="311.0" text="Nom" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_search" layoutX="252.0" layoutY="114.0" promptText="Rechercher" />
+      <Button layoutX="477.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnSearchAction" style="-fx-background-color: #e63572;" text="Rechercher" />
+      <Text layoutX="252.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Thematique">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="190.0" fitWidth="160.0" layoutX="756.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/avatar-1%20-%20Copie.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="rech" layoutX="599.0" layoutY="114.0" />
+   </children>
+</AnchorPane>

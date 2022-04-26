@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeast.esprit.gui.AfficherDiscussionController">
+   <children>
+      <AnchorPane id="txt_id" prefHeight="626.0" prefWidth="211.0" style="-fx-background-color: #247eea;">
+         <children>
+            <Button layoutX="22.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #51ab55;" text="Ajouter" textFill="WHITE" />
+            <Button layoutX="22.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnModifierAction" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: orange;" text="Modifier" textFill="WHITE" />
+            <Button layoutX="22.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnSupprimerAction" prefHeight="36.0" prefWidth="168.0" style="-fx-background-color: #eb4845;" text="Supprimer" textFill="WHITE" />
+            <TextField id="txt" fx:id="txt_id_discussion" editable="false" layoutX="12.0" layoutY="65.0" prefHeight="31.0" prefWidth="187.0" promptText="ID" />
+            <TextField id="txt_nom" fx:id="txt_titre" layoutX="12.0" layoutY="107.0" prefHeight="31.0" prefWidth="187.0" promptText="Discussion" />
+            <ComboBox fx:id="Combo_thematique" layoutX="12.0" layoutY="151.0" prefHeight="31.0" prefWidth="187.0" promptText="Thématique" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_discussion" layoutX="242.0" layoutY="200.0" onMouseClicked="#getSelected" prefHeight="391.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_titre" prefWidth="351.0" text="Titre" />
+            <TableColumn fx:id="col_thematique" minWidth="0.0" prefWidth="218.0" text="Thematique" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_search" layoutX="231.0" layoutY="121.0" promptText="Rechercher" />
+      <Button layoutX="430.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnSearchAction" style="-fx-background-color: #e63572;" text="Rechercher" />
+      <Text layoutX="242.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Discussion">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Text>
+      <HBox layoutX="131.0" layoutY="1.0" prefHeight="100.0" prefWidth="200.0" />
+      <Label layoutX="543.0" layoutY="126.0" text="Filter par thematique:" />
+      <ComboBox fx:id="combo_filtre" layoutX="694.0" layoutY="121.0" onAction="#onchangeThematique" prefWidth="150.0" />
+   </children>
+</AnchorPane>

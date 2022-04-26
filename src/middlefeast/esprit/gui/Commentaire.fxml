@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="780.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeast.esprit.gui.CommentaireController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: #e4606d;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="lbl_commentaire" text="Commentaires" textFill="WHITE" translateX="250.0">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutY="92.0" prefHeight="308.0" prefWidth="600.0" styleClass="transparent" stylesheets="@style.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" prefHeight="300.0" prefWidth="760.0" styleClass="transparent" stylesheets="@style.css">
+              <content>
+                  <GridPane fx:id="grid" prefHeight="3.0" prefWidth="5.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+              </content>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="56.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_titre" prefHeight="62.0" prefWidth="546.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#btnAjouterAction" text="Ajouter">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

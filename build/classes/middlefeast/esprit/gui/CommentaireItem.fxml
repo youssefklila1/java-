@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="thematiqueItem" prefHeight="262.0" prefWidth="340.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeast.esprit.gui.CommentaireItemController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-17.0" layoutY="12.0" prefHeight="96.0" prefWidth="409.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="-17.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Label fx:id="id_commentaire" prefHeight="0.0" prefWidth="0.0" visible="false" />
+            <ImageView fitHeight="73.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/avt1-img.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="200.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="User">
+               <VBox.margin>
+                  <Insets right="200.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbl_commentaire" contentDisplay="CENTER" prefHeight="49.0" prefWidth="341.0" styleClass="commentaire-item" stylesheets="@style.css" text="commentaire" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txt_reponse" prefHeight="55.0" prefWidth="261.0" promptText="Répondre au commentaire">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fx:id="btn_repondre" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/reply.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btn_like" fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/like.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="nb_like" prefHeight="18.0" prefWidth="17.0" text="1" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+.button
+{
+-fx-background-color : #e4606d;
+-fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : #10165F;
+}
+.button:pressed
+{
+-fx-background-color : #1620A1;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.transparent{
+    
+    -fx-background-color: transparent;
+    
+}
+
+.thematique-item {
+    -fx-background-color:#FFF;
+    -fx-background-radius : 10
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
+}
+.commentaire-item{
+    -fx-background-color:   #e4606d;
+    -fx-background-radius : 30;
+}
+.lbl_reponse{
+    -fx-background-color : blue;
+    -fx-text-fill : #FFF
+}
+
