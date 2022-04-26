@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- #B8124E; -->
+
+<AnchorPane fx:id="DashboardUtilis" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1051.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CardpaymentController">
+   <children>
+      <JFXTextField fx:id="firstnamefield" focusColor="#3a0088" labelFloat="true" layoutX="468.0" layoutY="148.0" prefWidth="185.0" promptText="First Name" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" />
+      <JFXTextField fx:id="lastnamefield" focusColor="#3a0088" labelFloat="true" layoutX="683.0" layoutY="148.0" prefWidth="185.0" promptText="Last Name" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" />
+      <JFXTextField fx:id="emailfield" focusColor="#3a0088" labelFloat="true" layoutX="467.0" layoutY="211.0" prefHeight="31.0" prefWidth="185.0" promptText="Email" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" />
+      <JFXTextField fx:id="cardfield" focusColor="#3a0088" labelFloat="true" layoutX="471.0" layoutY="362.0" prefHeight="26.0" prefWidth="379.0" promptText="Card Number" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" />
+      <JFXTextField fx:id="cvvfield" focusColor="#3a0088" labelFloat="true" layoutX="745.0" layoutY="412.0" prefWidth="100.0" promptText="CVV" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" />
+      <JFXComboBox fx:id="expmonthbox" focusColor="#3a0088" labelFloat="true" layoutX="471.0" layoutY="412.0" prefWidth="100.0" promptText="Exp Month" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C; -fx-background-color: #F1F1F1;" unFocusColor="#111f4d" visibleRowCount="5" />
+      <JFXComboBox fx:id="expyearbox" focusColor="#3a0088" labelFloat="true" layoutX="611.0" layoutY="412.0" prefWidth="100.0" promptText="Exp Year" style="-fx-text-fill: #00043C; -fx-prompt-text-fill: #00043C;" unFocusColor="#111f4d" visibleRowCount="5" />
+      <JFXButton fx:id="placeorderbtn" buttonType="RAISED" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="726.0" layoutY="504.0" onAction="#handleButtons" prefHeight="47.0" prefWidth="139.0" style="-fx-background-color: #73A800; -fx-background-radius: 20;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="backcardbtn" buttonType="RAISED" layoutX="471.0" layoutY="504.0" onAction="#handleButtons" prefHeight="47.0" prefWidth="139.0" style="-fx-background-color: #EE712B; -fx-background-radius: 20;" text="Go Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="471.0" layoutY="312.0" text="Card Details" textFill="#020438">
+         <font>
+            <Font name="Microsoft Sans Serif" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="100.0" text="Customer Details" textFill="#020438">
+         <font>
+            <Font name="Microsoft Sans Serif" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="47.0" text="Shopping Cart" textFill="#020438">
+         <font>
+            <Font name="Microsoft Sans Serif" size="23.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="683.0" layoutY="211.0" prefHeight="31.0" prefWidth="185.0" promptText="Addresse" />
+      <ImageView fitHeight="150.0" fitWidth="206.0" layoutX="278.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar-3.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="pnItems" alignment="TOP_CENTER" layoutX="-1.0" layoutY="-4.0" prefHeight="606.0" prefWidth="269.0" style="-fx-background-color: #e4606d;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/avt1-img.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="user" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #e4606d;" stylesheets="@../../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Overview" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPanier" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #e4606d;" stylesheets="@../../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Panier">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #e4606d;" stylesheets="@../../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Commandes Front">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #e4606d;" stylesheets="@../../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Commandes Back">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnStats" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #e4606d;" stylesheets="@../../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Statistiques">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
