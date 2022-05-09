@@ -27,9 +27,13 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import middlefeastdes.gui.front.UserSession;
 
 public class ShowAllWishlistsController implements Initializable {
 
+    
+    UserSession userSession = UserSession.getInstace();
+    
     @FXML
     private ScrollPane scrollTable;
 
@@ -56,9 +60,8 @@ public class ShowAllWishlistsController implements Initializable {
             grid.setStyle(
                     "-fx-background-color: #ffffff;"
             );
-            User user = new User();
-            user.setId(7);
-            articles = wishlistArticleService.findByUser(user);
+           
+            articles = wishlistArticleService.findByUser(userSession.getConnectedUser());
             if(articles.isEmpty()){
                 Pane emptyPane = new Pane();
                 emptyPane.setPrefWidth(920);

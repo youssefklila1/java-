@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="747.0" prefWidth="1000.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.TutorialController">
+<AnchorPane prefHeight="747.0" prefWidth="1000.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.TutorialController">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1000.0" spacing="100.0">
          <children>
@@ -20,8 +20,13 @@
                   <Font size="14.0" />
                </font>
             </Button>
+            <Button fx:id="statsBtn" layoutX="260.0" layoutY="40.0" mnemonicParsing="false" onAction="#loadStats" styleClass="styledBtn" stylesheets="@../../css/style.css" text="Stats">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
-      <AnchorPane fx:id="productDisplayArea" layoutY="100.0" prefHeight="647.0" prefWidth="1000.0" />
+      <AnchorPane fx:id="productDisplayArea" layoutY="100.0" prefHeight="647.0" prefWidth="1000.0" style="-fx-background-color: ffffff;" />
    </children>
 </AnchorPane>

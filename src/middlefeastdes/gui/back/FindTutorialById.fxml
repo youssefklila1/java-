@@ -9,29 +9,29 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindTutorialByIdController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindTutorialByIdController">
    <children>
       <VBox layoutX="11.0" layoutY="14.0" prefWidth="293.0">
          <children>
             <ImageView fx:id="imgDisplay" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <Label />
-            <Label text="Title" textFill="WHITE">
+            <Label text="Title">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lblTitle" text="Label" textFill="WHITE">
+            <Label fx:id="lblTitle" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
             <Label />
-            <Label layoutX="10.0" layoutY="160.0" text="Description" textFill="WHITE">
+            <Label layoutX="10.0" layoutY="160.0" text="Description">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lblDescription" layoutX="10.0" layoutY="186.0" text="Label" textFill="WHITE">
+            <Label fx:id="lblDescription" layoutX="10.0" layoutY="186.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -42,12 +42,12 @@
          <children>
             <HBox spacing="10.0">
                <children>
-                  <Label text="Uploaded :" textFill="WHITE">
+                  <Label text="Uploaded :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblDate" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblDate" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -56,12 +56,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
-                  <Label text="Category :" textFill="WHITE">
+                  <Label text="Category :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblCategory" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblCategory" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -70,19 +70,19 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="37.0" spacing="48.0">
                <children>
-                  <Label text="Price :" textFill="WHITE">
+                  <Label text="Price :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblPrice" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblPrice" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <Label text="Video :" textFill="WHITE">
+            <Label text="Video :">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>

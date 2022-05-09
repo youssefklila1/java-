@@ -5,11 +5,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="208.0" prefWidth="481.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.InfoScreenArticleController">
+<AnchorPane prefHeight="208.0" prefWidth="481.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.InfoScreenArticleController">
    <children>
       <Button fx:id="btnOk" layoutX="191.0" layoutY="132.0" mnemonicParsing="false" onAction="#confirm" styleClass="buttonSafe" stylesheets="@../../css/ButtonStyle.css" text="OK" />
-      <Label fx:id="infoMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="63.0" prefHeight="26.0" prefWidth="481.0" text="label" textAlignment="JUSTIFY" textFill="WHITE">
+      <Label fx:id="infoMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="63.0" prefHeight="26.0" prefWidth="481.0" text="label" textAlignment="JUSTIFY">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

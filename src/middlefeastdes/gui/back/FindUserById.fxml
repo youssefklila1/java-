@@ -7,18 +7,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindUserByIdController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindUserByIdController">
    <children>
       <VBox layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="287.0">
          <children>
             <HBox spacing="10.0">
                <children>
-                  <Label text="Email :" textFill="WHITE">
+                  <Label text="Email :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblEmail" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblEmail" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -27,12 +27,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="31.0">
                <children>
-                  <Label text="FirstName :" textFill="WHITE">
+                  <Label text="FirstName :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblFirstName" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblFirstName" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -41,12 +41,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="37.0" spacing="25.0">
                <children>
-                  <Label text="LastName :" textFill="WHITE">
+                  <Label text="LastName :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblLastName" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblLastName" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>

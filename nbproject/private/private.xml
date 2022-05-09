@@ -3,38 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ShowAllTutorialsController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/Login.fxml</file>
             <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/articles/FindArticleByIdController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ConfirmDeleteTutorialController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ArticleController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/AddTutorialController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ConfirmDeleteUserController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/Main.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/VerificationController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/AddArticleController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/UsersController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/HomeController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ConfirmDeleteArticleController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/FindCourseByIdController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/MiddlefeastDes.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/HomeController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/FindArticleByIdController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/InfoScreenController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/ResetPasswordController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ShowAllUsersController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ShowAllArticlesController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/LoginController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/Home.fxml</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/AddUserController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ShowAllCoursesController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/InfoScreenTutorialController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/FindTutorialByIdController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/utils/Mail.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/InfoScreenArticleController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/InfoScreenCourseController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/ConfirmDeleteCourseController.java</file>
-            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/CoursesController.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/articles/ShowAllArticlesController.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/service/ArticleService.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/entity/WishlistArticle.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/entity/Article.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/service/WishlistArticleService.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/wishlists/ConfirmDeleteFromWishlistController.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/front/wishlists/ShowAllWishlistsController.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/entity/Course.java</file>
+            <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/gui/back/AddCourseController.java</file>
             <file>file:/C:/Users/Omar/Documents/NetBeansProjects/MiddlefeastDes/src/middlefeastdes/service/UserService.java</file>
         </group>
     </open-files>

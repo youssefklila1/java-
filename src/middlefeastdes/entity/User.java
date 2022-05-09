@@ -3,6 +3,7 @@ package middlefeastdes.entity;
 import java.util.List;
 
 public class User {
+
     private int id;
     private String email;
     private List<String> roles;
@@ -10,8 +11,8 @@ public class User {
     private String firstname;
     private String lastname;
     private boolean isVerified;
-    
-    public User(){
+
+    public User() {
     }
 
     public User(String email, String password, String firstname, String lastname) {
@@ -28,13 +29,7 @@ public class User {
         this.firstname = firstname;
         this.lastname = lastname;
     }
-    
-    
-    
-    
-    
-    
-    
+
     public User(int id, String email, List<String> roles, String password, String firstname, String lastname, boolean isVerified) {
         this.id = id;
         this.email = email;
@@ -71,7 +66,7 @@ public class User {
     }
 
     public List<String> getRoles() {
-        if(roles.isEmpty()){
+        if (roles.isEmpty()) {
             roles.add("ROLE_USER");
         }
         return roles;
@@ -117,8 +112,10 @@ public class User {
     public String toString() {
         return "User{" + "email=" + email + ", roles=" + roles + ", password=" + password + ", firstname=" + firstname + ", lastname=" + lastname + '}';
     }
-    
-    
-    
-    
+
+    public String print() {
+        return "User{" + "email=" + email + ", firstname=" + firstname + ", lastname=" + lastname + '}';
+
+    }
+
 }

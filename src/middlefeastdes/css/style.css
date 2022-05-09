@@ -53,7 +53,7 @@
     -fx-background-radius: 0;
     -fx-background-color: transparent;
     -fx-font-size: 14;
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-pref-height: 40;
     -fx-pref-width: 100;
 }
@@ -171,6 +171,7 @@
     -fx-background-radius: 0;
     -fx-border-style: none;
     -fx-border-radius: 0;
+    -fx-border-color: black;
 }
 
 #frontBikeProductBtn{

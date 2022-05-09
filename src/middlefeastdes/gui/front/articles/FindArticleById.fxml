@@ -7,8 +7,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.articles.FindArticleByIdController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.articles.FindArticleByIdController">
    <children>
       <VBox layoutX="11.0" layoutY="14.0" prefWidth="293.0">
          <children>
@@ -79,10 +80,11 @@
                   <Font size="14.0" />
                </font>
             </Label>
+            <Rating fx:id="rating" onMouseClicked="#rate" prefWidth="308.0" rating="0.0" />
             <Label prefHeight="50.0" />
             <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#addToFav" styleClass="buttonSafe" stylesheets="@../../../css/ButtonStyle.css" text="Add to fav" />
+                  <Button fx:id="btnFav" mnemonicParsing="false" onAction="#addToFav" styleClass="buttonSafe" stylesheets="@../../../css/ButtonStyle.css" text="Add to fav" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
          </children>
