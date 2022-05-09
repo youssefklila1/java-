@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="647.0" prefWidth="1000.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.AddUserController">
+<AnchorPane prefHeight="647.0" prefWidth="1000.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.AddUserController">
    <children>
       <VBox>
          <children>
-            <Label text="New User" textFill="WHITE">
+            <Label text="New User">
                <font>
                   <Font size="24.0" />
                </font>
@@ -22,7 +22,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="214.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Email :" textFill="WHITE">
+                        <Label text="Email :">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -33,7 +33,7 @@
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="251.0" prefWidth="100.0" spacing="10.0" />
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="289.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Firstname :" textFill="WHITE">
+                        <Label text="Firstname :">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -45,7 +45,7 @@
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="267.0" prefWidth="100.0" spacing="10.0" />
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="192.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Lastname " textFill="WHITE">
+                        <Label text="Lastname ">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -55,7 +55,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="325.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Password :" textFill="WHITE">
+                        <Label text="Password :">
                            <font>
                               <Font size="14.0" />
                            </font>

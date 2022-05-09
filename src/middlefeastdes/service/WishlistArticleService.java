@@ -68,8 +68,8 @@ public class WishlistArticleService implements IService<WishlistArticle> {
         while (rs.next()){
             WishlistArticle wishlistArticle = new WishlistArticle(
                     rs.getInt(1),
-                    rs.getInt(2),
-                    rs.getInt(3)
+                    rs.getInt(3),
+                    rs.getInt(2)
             );
             wishlistArticleList.add(wishlistArticle);
         }

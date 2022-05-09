@@ -5,14 +5,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="179.0" prefWidth="426.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.ConfirmDeleteTutorialController">
+<AnchorPane prefHeight="179.0" prefWidth="426.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.ConfirmDeleteTutorialController">
    <children>
-      <Label layoutX="23.0" layoutY="42.0" prefHeight="26.0" prefWidth="382.0" text="Are you sure you want to delete the current item ?" textFill="WHITE">
+      <Label layoutX="23.0" layoutY="42.0" prefHeight="26.0" prefWidth="382.0" text="Are you sure you want to delete the current item ?">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="23.0" layoutY="68.0" prefHeight="26.0" prefWidth="214.0" text="This action is not reversible." textFill="WHITE">
+      <Label layoutX="23.0" layoutY="68.0" prefHeight="26.0" prefWidth="214.0" text="This action is not reversible.">
          <font>
             <Font size="17.0" />
          </font>

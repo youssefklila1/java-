@@ -59,7 +59,7 @@ public class ShowAllUsersController implements Initializable{
             grid.setVgap(30);
             grid.setPadding(new Insets(10));
             grid.setStyle(
-                    "-fx-background-color: #121212;"
+                    "-fx-background-color: #ffffff;"
             );
             users = UserService.findAll();
             data.addAll(users);
@@ -67,15 +67,15 @@ public class ShowAllUsersController implements Initializable{
                 HBox row = new HBox();
                 row.prefHeightProperty().setValue(55);
                 row.alignmentProperty().setValue(Pos.CENTER_LEFT);
-                row.setStyle("-fx-background-color: #121212");
+                row.setStyle("-fx-background-color: #ffffff");
                 row.setOnMouseEntered(event -> row.setStyle("-fx-background-color: #332940"));
                 row.setOnMouseExited(event -> row.setStyle("-fx-background-color: #121212"));
                 Label lblDescription = new Label(data.get(i).getEmail());
-                lblDescription.setTextFill(Color.WHITE);
+                lblDescription.setTextFill(Color.BLACK);
                 Label lblMode = new Label(data.get(i).getFirstname());
-                lblMode.setTextFill(Color.WHITE);
+                lblMode.setTextFill(Color.BLACK);
                 Label lblDateDebut = new Label(data.get(i).getLastname());
-                lblDateDebut.setTextFill(Color.WHITE);
+                lblDateDebut.setTextFill(Color.BLACK);
                 grid.add(lblDescription, 0, i+1, 1, 1);
                 grid.add(lblMode, 1, i+1, 1, 1);
                 grid.add(lblDateDebut, 2, i+1, 1, 1);
@@ -92,7 +92,7 @@ public class ShowAllUsersController implements Initializable{
         
         private Button DetailsButton(User user, ResourceBundle resources) {
         Button btn = new Button("Details");
-        btn.setTextFill(Color.WHITE);
+        btn.setTextFill(Color.BLACK);
         btn.setStyle(
                 "-fx-background-color: transparent;" +
                         "-fx-background-radius: 20;" +
@@ -116,7 +116,7 @@ public class ShowAllUsersController implements Initializable{
                             "-fx-border-radius: 20;" +
                             "-fx-animated: 1000;"
             );
-            btn.setTextFill(Color.WHITE);
+            btn.setTextFill(Color.BLACK);
         });
         btn.setOnAction(event -> {
             Parent root;

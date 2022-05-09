@@ -51,17 +51,17 @@ public class ShowAllTutorialsController implements Initializable {
             grid.setVgap(30);
             grid.setPadding(new Insets(10));
             grid.setStyle(
-                    "-fx-background-color: #121212;"
+                    "-fx-background-color: #ffffff;"
             );
             tutorials = tutorialService.findAll();
             if(tutorials.isEmpty()){
                 Pane emptyPane = new Pane();
                 emptyPane.setPrefWidth(920);
                 emptyPane.setPrefHeight(486);
-                emptyPane.setStyle("-fx-background-color: #121212;");
+                emptyPane.setStyle("-fx-background-color: #ffffff;");
                 Label emptyLabel = new Label("No items found");
                 emptyLabel.setStyle("" +
-                        "-fx-text-fill: #ffffff;" +
+                        "-fx-text-fill: #121212;" +
                         "-fx-font-size: 17;" +
                         "-fx-font-weight: bold");
                 emptyLabel.layoutXProperty().bind(emptyPane.widthProperty().subtract(emptyLabel.widthProperty()).divide(2));
@@ -72,16 +72,16 @@ public class ShowAllTutorialsController implements Initializable {
                 data.addAll(tutorials);
                 for (int i = 0; i < data.size(); i++) {
                     Label lblDescription = new Label(data.get(i).getDescription());
-                    lblDescription.setTextFill(Color.WHITE);
+                    lblDescription.setTextFill(Color.BLACK);
                     Label lblCategory = new Label(data.get(i).getCategory());
-                    lblCategory.setTextFill(Color.WHITE);
+                    lblCategory.setTextFill(Color.BLACK);
                     Label lblTitle = new Label(data.get(i).getTitre());
-                    lblTitle.setTextFill(Color.WHITE);
+                    lblTitle.setTextFill(Color.BLACK);
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
                     Label lblDate = new Label(simpleDateFormat.format(data.get(i).getDateTuto()));
-                    lblDate.setTextFill(Color.WHITE);
+                    lblDate.setTextFill(Color.BLACK);
                     Label lblPrice = new Label(String.valueOf(data.get(i).getPrix()) + "TND");
-                    lblPrice.setTextFill(Color.WHITE);
+                    lblPrice.setTextFill(Color.BLACK);
                     grid.add(lblTitle, 0, i + 1, 1, 1);
                     grid.add(lblCategory, 1, i + 1, 1, 1);
                     grid.add(lblDescription, 2, i + 1, 1, 1);
@@ -99,7 +99,7 @@ public class ShowAllTutorialsController implements Initializable {
 
     private Button DetailsButton(Tutorial tutorial, ResourceBundle resources) {
         Button btn = new Button("Details");
-        btn.setTextFill(Color.WHITE);
+        btn.setTextFill(Color.BLACK);
         btn.setStyle(
                 "-fx-background-color: transparent;" +
                         "-fx-background-radius: 20;" +
@@ -123,7 +123,7 @@ public class ShowAllTutorialsController implements Initializable {
                             "-fx-border-radius: 20;" +
                             "-fx-animated: 1000;"
             );
-            btn.setTextFill(Color.WHITE);
+            btn.setTextFill(Color.BLACK);
         });
         btn.setOnAction(event -> {
             Parent root;
