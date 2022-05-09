@@ -47,6 +47,7 @@ public class AddCourseController implements Initializable {
 
     @FXML
     private TextField tfPrice;
+    
 
     private Course course;
 
@@ -54,6 +55,7 @@ public class AddCourseController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        
         Platform.runLater(() -> {
             if (course != null) {
                 lblTask.setText("Update Course");
@@ -64,9 +66,13 @@ public class AddCourseController implements Initializable {
                 taDescription.setText(course.getDescription());
                 tfPrice.setText(String.valueOf(course.getPrice()));
                 tfDuration.setText(course.getDuree());
+                
+                
             }
         });
+       
         cbMode.getItems().addAll("Online", "On-site");
+        
     }
 
     @FXML
@@ -138,4 +144,5 @@ public class AddCourseController implements Initializable {
     public void setCourse(Course course) {
         this.course = course;
     }
+    
 }

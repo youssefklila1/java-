@@ -5,6 +5,8 @@ public class Course {
     private int id;
     private int price;
     private String mode;
+
+   
     private Date dateDebut;
     private Date dateFin;
     private String duree;
@@ -86,10 +88,16 @@ public class Course {
     public void setDescription(String description) {
         this.description = description;
     }
+    
 
     @Override
     public String toString() {
         return "Course{" + "price=" + price + ", mode=" + mode + ", dateDebut=" + dateDebut + ", dateFin=" + dateFin + ", duree=" + duree + ", description=" + description + '}';
+    }
+
+    public String print() {
+                return "Course{" + "price=" + price + ", mode=" + mode + ", dateDebut=" + dateDebut + ", dateFin=" + dateFin + ", duree=" + duree + ", description=" + description + '}';
+
     }
     
     

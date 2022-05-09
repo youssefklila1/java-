@@ -32,6 +32,11 @@ public class LoginController {
 
     @FXML
     private TextField txt_pass;
+    
+    @FXML
+    private Button btnregister;
+    
+    UserSession userSession = UserSession.getInstace();
 
     @FXML
     void forgotPass(ActionEvent event) {
@@ -75,14 +80,45 @@ public class LoginController {
 
 
     @FXML
-    void login(ActionEvent event) throws SQLException {
-        UserSession userSession = new UserSession();
+    void register(ActionEvent event){
+        
+         Parent root;
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Register.fxml"));
+            root = (Parent)fxmlLoader.load();
+ 
+            Stage stage = new Stage();
+            stage.setTitle("Register");
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.DECORATED);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+    }
+        
+    @FXML
+    void login(ActionEvent event) throws SQLException, IOException {
+        
         userSession.setConnectedUser(userService.login(txt_email.getText(), txt_pass.getText()));
         if(userSession.getConnectedUser()!=null)
         {
              a.setAlertType(Alert.AlertType.INFORMATION);
                 a.setContentText("Login Successfull !");
                 a.show();
+                
+                Stage stg = (Stage) loginbtn.getScene().getWindow();
+               Stage main = (Stage) stg.getScene().getWindow();
+
+            Parent root;
+                
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
+            root = (Parent)fxmlLoader.load();
+                   HomeController homeController = fxmlLoader.<HomeController>getController();
+        main.setScene(new Scene(root));
+        
+        main.show();
         }else
         {
             a.setAlertType(Alert.AlertType.INFORMATION);

@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="647.0" prefWidth="1000.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.AddArticleController">
+<AnchorPane prefHeight="647.0" prefWidth="1000.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.AddArticleController">
    <children>
       <VBox>
          <children>
-            <Label fx:id="lblTask" text="Add article" textFill="WHITE">
+            <Label fx:id="lblTask" text="Add article">
                <font>
                   <Font size="24.0" />
                </font>
@@ -23,7 +23,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Name :" textFill="WHITE">
+                        <Label text="Name :">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -33,7 +33,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="125.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Description :" textFill="WHITE">
+                        <Label text="Description :">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -43,7 +43,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="214.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Label text="Recipe :" textFill="WHITE">
+                        <Label text="Recipe :">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -53,14 +53,14 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" prefWidth="231.0" spacing="10.0">
                      <children>
-                        <Label prefHeight="20.0" prefWidth="55.0" text="Image :" textFill="WHITE">
+                        <Label prefHeight="20.0" prefWidth="55.0" text="Image :">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
                         <HBox>
                            <children>
-                              <TextField fx:id="nomImage" prefHeight="28.0" styleClass="text-field" stylesheets="@../../css/style.css" />
+                              <TextField fx:id="nomImage" prefHeight="28.0" style="-fx-border-color: black;" styleClass="text-field" stylesheets="@../../css/style.css" />
                               <Button fx:id="ImageArticle" mnemonicParsing="false" onAction="#selectImage" prefWidth="91.0" styleClass="buttonImport" stylesheets="@../../css/ButtonStyle.css" text="Import" />
                            </children>
                         </HBox>

@@ -45,6 +45,69 @@ public class ArticleService implements IService<Article> {
         pre.setInt(1, id);
         pre.executeUpdate();
     }
+    
+    public int getRating(int id) throws SQLException{
+              ste = con.createStatement();
+        ResultSet rs = ste.executeQuery("SELECT * FROM article_rating where article_id="+id);
+        int count=0;
+        int ratings=0;
+        while (rs.next()){
+            count++;
+            ratings+=rs.getInt(4);
+        }
+        
+        if(count==0 || ratings==0)
+        {
+            return 0;
+        }
+      
+        return ratings/count;
+    }
+    
+    public void rateArticle(int id,int user,int rate) throws SQLException
+    {
+           ste = con.createStatement();
+        ResultSet rs = ste.executeQuery("SELECT * FROM article_rating where article_id="+id+" AND user_id="+user);
+        if(rs.next())
+        {
+              PreparedStatement pre =
+                con.prepareStatement(
+                        "UPDATE `article_rating` SET rate=? where article_id=? AND user_id=?"
+                               
+                );
+       // pre.setString(1, article.getName());
+       pre.setInt(1, rate);
+       pre.setInt(2, id);
+       pre.setInt(3, user);
+        pre.executeUpdate();
+        }else
+        {
+              PreparedStatement pre =
+                con.prepareStatement(
+                        "INSERT INTO  `article_rating` " +
+                                "(`user_id`, `article_id`, `rate`) " +
+                                "VALUES (?, ?, ?)"
+                );
+       // pre.setString(1, article.getName());
+       pre.setInt(1, user);
+       pre.setInt(2, id);
+       pre.setInt(3, rate);
+        pre.executeUpdate();
+        }
+       
+    }
+    
+    public int getArticleUserRate(int user,int id) throws SQLException
+    {
+          ste = con.createStatement();
+        ResultSet rs = ste.executeQuery("SELECT * FROM article_rating where article_id="+id+" AND user_id="+user);
+        int rate=0;
+          while (rs.next()){
+              rate = rs.getInt(4);
+          }
+          
+          return rate;
+    }
 
     @Override
     public void update(Article article) throws SQLException {
@@ -107,14 +170,12 @@ public class ArticleService implements IService<Article> {
         return article;
     }
 
-    private void addOneView(Article article) throws SQLException {
+    public void addOneView(Article article) throws SQLException {
         PreparedStatement pre =
                 con.prepareStatement(
-                        "UPDATE `article` SET " +
-                                "vues = ? WHERE id = ?"
+                        "UPDATE `article` SET vues = ? WHERE id = ?"
                 );
-        int views = article.getVues()+1;
-        pre.setInt(1, views);
+        pre.setInt(1, article.getVues()+1);
         pre.setInt(2, article.getId());
         pre.executeUpdate();
     }

@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.front.LoginController">
    <children>
-      <VBox prefHeight="408.0" prefWidth="163.0" style="-fx-background-color: e6406d;" />
+      <VBox prefHeight="477.0" prefWidth="163.0" style="-fx-background-color: e6406d;" />
       <HBox layoutX="72.0" layoutY="163.0" prefHeight="239.0" prefWidth="456.0">
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0">
@@ -54,6 +54,7 @@
          <children>
             <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#login" style="-fx-border-color: e4606d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="Login" />
             <Button fx:id="btnforgotpass" mnemonicParsing="false" onAction="#forgotPass" style="-fx-border-color: e6406d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="Forgot Password ?" />
+            <Button fx:id="btnregister" layoutX="178.0" layoutY="69.0" mnemonicParsing="false" onAction="#register" style="-fx-border-color: e6406d;" styleClass="fancyBtnLg" stylesheets="@../../css/style.css" text="New ? Register Here" />
          </children>
       </VBox>
    </children>

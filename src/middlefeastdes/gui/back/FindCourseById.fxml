@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindCourseByIdController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="middlefeastdes.gui.back.FindCourseByIdController">
    <children>
       <VBox layoutX="11.0" layoutY="14.0" prefWidth="293.0">
          <children>
-            <Label text="Description :" textFill="WHITE">
+            <Label text="Description :">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lblDescription" text="Label" textFill="WHITE">
+            <Label fx:id="lblDescription" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -27,12 +27,12 @@
          <children>
             <HBox spacing="10.0">
                <children>
-                  <Label text="From :" textFill="WHITE">
+                  <Label text="From :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblDateDebut" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblDateDebut" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -41,12 +41,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="31.0">
                <children>
-                  <Label text="To :" textFill="WHITE">
+                  <Label text="To :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblDateFin" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblDateFin" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -55,12 +55,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="37.0" spacing="25.0">
                <children>
-                  <Label text="For :" textFill="WHITE">
+                  <Label text="For :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblDuration" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblDuration" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -69,12 +69,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="64.0" spacing="12.0">
                <children>
-                  <Label text="Price :" textFill="WHITE">
+                  <Label text="Price :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblPrice" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblPrice" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -83,12 +83,12 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="91.0" spacing="5.0">
                <children>
-                  <Label text="Mode :" textFill="WHITE">
+                  <Label text="Mode :">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblMode" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label" textFill="WHITE">
+                  <Label fx:id="lblMode" layoutX="10.0" layoutY="10.0" prefHeight="27.0" text="Label">
                      <font>
                         <Font size="14.0" />
                      </font>

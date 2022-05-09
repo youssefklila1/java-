@@ -19,9 +19,9 @@ public final class UserSession {
         
     }
 
-    public static UserSession getInstace(User connectedUser) {
+    public static UserSession getInstace() {
         if(instance == null) {
-            instance = new UserSession(connectedUser);
+            instance = new UserSession();
         }
         return instance;
     }

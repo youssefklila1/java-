@@ -2,8 +2,8 @@ package middlefeastdes.entity;
 
 import java.util.Date;
 
-
 public class Tutorial {
+
     private int id;
     private String video;
     private String image;
@@ -100,10 +100,15 @@ public class Tutorial {
     public void setPrix(double prix) {
         this.prix = prix;
     }
-    
+
     @Override
     public String toString() {
         return "Tutorial{" + "video=" + video + ", image=" + image + ", dateTuto=" + dateTuto + ", category=" + category + ", titre=" + titre + ", description=" + description + ", prix=" + prix + '}';
     }
-    
+
+    public String print() {
+        return "Tutorial{" + " Date=" + dateTuto + ", category=" + category + ", titre=" + titre + ", description=" + description + ", prix=" + prix + '}';
+
+    }
+
 }

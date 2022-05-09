@@ -52,17 +52,17 @@ public class ShowAllCoursesController implements Initializable {
             grid.setVgap(30);
             grid.setPadding(new Insets(10));
             grid.setStyle(
-                    "-fx-background-color: #121212;"
+                    "-fx-background-color: #ffffff;"
             );
             courses = courseService.findAll();
             if(courses.isEmpty()){
                 Pane emptyPane = new Pane();
                 emptyPane.setPrefWidth(920);
                 emptyPane.setPrefHeight(486);
-                emptyPane.setStyle("-fx-background-color: #121212;");
+                emptyPane.setStyle("-fx-background-color: #ffffff;");
                 Label emptyLabel = new Label("No items found");
                 emptyLabel.setStyle("" +
-                        "-fx-text-fill: #ffffff;" +
+                        "-fx-text-fill: #121212;" +
                         "-fx-font-size: 17;" +
                         "-fx-font-weight: bold");
                 emptyLabel.layoutXProperty().bind(emptyPane.widthProperty().subtract(emptyLabel.widthProperty()).divide(2));
@@ -74,18 +74,18 @@ public class ShowAllCoursesController implements Initializable {
                 data.addAll(courses);
                 for (int i = 0; i < data.size(); i++) {
                     Label lblDescription = new Label(data.get(i).getDescription());
-                    lblDescription.setTextFill(Color.WHITE);
+                    lblDescription.setTextFill(Color.BLACK);
                     Label lblMode = new Label(data.get(i).getMode());
-                    lblMode.setTextFill(Color.WHITE);
+                    lblMode.setTextFill(Color.BLACK);
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
                     Label lblDateDebut = new Label(simpleDateFormat.format(data.get(i).getDateDebut()));
-                    lblDateDebut.setTextFill(Color.WHITE);
+                    lblDateDebut.setTextFill(Color.BLACK);
                     Label lblDateFin = new Label(simpleDateFormat.format(data.get(i).getDateFin()));
-                    lblDateFin.setTextFill(Color.WHITE);
+                    lblDateFin.setTextFill(Color.BLACK);
                     Label lblDuree = new Label(data.get(i).getDuree());
-                    lblDuree.setTextFill(Color.WHITE);
+                    lblDuree.setTextFill(Color.BLACK);
                     Label lblPrice = new Label(String.valueOf(data.get(i).getPrice()) + "TND");
-                    lblPrice.setTextFill(Color.WHITE);
+                    lblPrice.setTextFill(Color.BLACK);
                     grid.add(lblDescription, 0, i + 1, 1, 1);
                     grid.add(lblMode, 1, i + 1, 1, 1);
                     grid.add(lblDateDebut, 2, i + 1, 1, 1);
@@ -104,7 +104,7 @@ public class ShowAllCoursesController implements Initializable {
 
     private Button DetailsButton(Course course, ResourceBundle resources) {
         Button btn = new Button("Details");
-        btn.setTextFill(Color.WHITE);
+        btn.setTextFill(Color.BLACK);
         btn.setStyle(
                 "-fx-background-color: transparent;" +
                         "-fx-background-radius: 20;" +
@@ -128,7 +128,7 @@ public class ShowAllCoursesController implements Initializable {
                             "-fx-border-radius: 20;" +
                             "-fx-animated: 1000;"
             );
-            btn.setTextFill(Color.WHITE);
+            btn.setTextFill(Color.BLACK);
         });
         btn.setOnAction(event -> {
             Parent root;
